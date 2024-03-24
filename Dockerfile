@@ -7,11 +7,8 @@ WORKDIR /app
 # Copy the Python script into the container
 COPY app.py /app
 
-# Install any dependencies if required
-# For now, it's just a simple print statement, so no dependencies needed
-
 # Expose port 8000
 EXPOSE 8000
 
 # Command to run the Python script
-CMD ["python", "app.py"]
+CMD ["python", "app.py","runserver","0.0.0.0:8000"]
