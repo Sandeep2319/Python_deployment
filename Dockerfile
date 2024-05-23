@@ -12,4 +12,4 @@ EXPOSE 8000
 
 # Command to run the Python script
 CMD ["python", "app.py"]
-]
+
